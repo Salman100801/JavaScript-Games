@@ -1,0 +1,33 @@
+body{
+    background-color:mediumpurple;
+}
+
+header{
+    font-family: 'Patua One', cursive;
+    text-align: center;
+}
+
+marquee{
+    background-color: greenyellow;
+    font-family: 'Acme', sans-serif;
+}
+
+.games{
+    margin-top: 50px;
+}
+
+a:hover{
+    color:red;
+}
+a{
+    color: yellow;
+    text-decoration:none;
+}
+
+.container{
+    text-align: center;
+}
+
+hr{
+    margin-top: 10%;
+}

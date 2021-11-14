@@ -1,0 +1,58 @@
+body{
+    background-image: url('../images/backgroundimg.jpg');
+    background-size: cover;
+    width: device-width;
+}
+
+header{
+    text-align: center;
+    color:whitesmoke;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+li{
+    list-style-image: url('../images/ball.png');
+    background: rgb(127, 127, 226);
+    color:white;
+    padding: 3px 3px;
+    border: 1px black solid;
+    margin-bottom: 3px;
+}
+
+.container{
+    background:none;
+    height:fit-content;
+    margin: 0% 25%;
+}
+
+#newTask{
+    background:none;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    color: white;
+    border-radius: 5px;
+    width: 60%;
+    box-sizing: border-box;
+    margin: 10px 0px;
+}
+
+#addButton{
+    float:right;
+    background:none;
+    background-image: url('../images/add.png');
+    background-size: cover;
+    width: 7%;
+    padding-bottom: 2.5em;
+    margin-right: 6em;
+    border: 0em;
+}
+#addButton:hover{
+    opacity: 0.8;
+}
+#addButton:active{
+    opacity: 0.6;
+}
+
+footer{
+    text-align: center; 
+}
