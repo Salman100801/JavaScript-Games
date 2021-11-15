@@ -2,8 +2,7 @@ const btn = document.querySelector('#addButton');
 const task = document.querySelector('#newTask');
 const onGoing = document.querySelector('#onGoing');
 const completed = document.querySelector('#completed');
-
-
+let store = localStorage;
 
 btn.addEventListener('click', (e) => {
     e.preventDefault();
