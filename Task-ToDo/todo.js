@@ -41,7 +41,7 @@ btn.addEventListener('click', (e) => {
             completed.appendChild(btnEdit);
             completed.appendChild(btnDone);
             const Done = btnDone;
-            btnEdit.innerHTML = "Edit Task"
+            btnEdit.innerHTML = "Edit Task";
             Done.innerHTML = "Delete";
             //Deleting Node
             Done.addEventListener('click', (e) => {
