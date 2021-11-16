@@ -12,8 +12,10 @@ header{
 
 li{
     list-style-image: url('../images/ball.png');
-    background: rgb(127, 127, 226);
-    color:white;
+    width: fit-content;
+    background: rgba(127, 127, 226, 0.637);
+    font-weight:bolder;
+    color:rgb(5, 5, 5);
     padding: 3px 3px;
     border: 1px black solid;
     margin-bottom: 3px;
