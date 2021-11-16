@@ -14,7 +14,8 @@ btn.addEventListener('click', (e) => {
     btnEdit.innerHTML = "Edit";
     btnDone.classList.add("btnDone");
     btnDone.innerHTML = "Done";
-    if(task.value === ''){
+    if(task.value === '')
+    {
         alert('Input Text first');
     }
     else{
