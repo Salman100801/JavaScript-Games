@@ -6,7 +6,7 @@ const completed = document.querySelector('#completed');
 
 btn.addEventListener('click', (e) => {
     e.preventDefault();
-    const li = document.createElement('li');
+    var li = document.createElement('li');
     const btnDone = document.createElement('button');
     const btnEdit = document.createElement('button');
     li.classList.add("text");
@@ -52,6 +52,7 @@ btn.addEventListener('click', (e) => {
                 btnDone.remove();
             });
         });
+
         
     }
 });
