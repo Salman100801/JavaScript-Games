@@ -13,7 +13,7 @@ btn.addEventListener('click', (e) => {
     btnEdit.classList.add("btnEdit");
     btnEdit.innerHTML = "<img src=\'https://raw.githubusercontent.com/Salman100801/JavaScript-Games/master/assets/images/edit.png\' />";
     btnDone.classList.add("btnDone");
-    btnDone.innerHTML = "<img src=\'https://raw.githubusercontent.com/Salman100801/JavaScript-Games/master/assets/images/delete.png\' />";
+    btnDone.innerHTML = "<img src=\'https://raw.githubusercontent.com/Salman100801/JavaScript-Games/master/assets/images/done.png\' />";
     if(task.value === '')
     {
         alert('Input Text first');
