@@ -14,6 +14,7 @@ li{
     list-style-image: url('../images/ball.png');
     width: fit-content;
     background: rgba(127, 127, 226, 0.637);
+    font-size: 2rem;
     font-weight:bolder;
     color:rgb(5, 5, 5);
     padding: 3px 3px;
@@ -57,4 +58,14 @@ li{
 
 footer{
     text-align: center; 
+}
+.btnEdit{
+    background: none;
+    border:none;
+    padding-left: 100px;
+} 
+.btnDone{
+    background: none;
+    border:none;
+    padding-left: 10px;
 }

@@ -11,9 +11,9 @@ btn.addEventListener('click', (e) => {
     const btnEdit = document.createElement('button');
     li.classList.add("text");
     btnEdit.classList.add("btnEdit");
-    btnEdit.innerHTML = "Edit";
+    btnEdit.innerHTML = "<img src=\'https://raw.githubusercontent.com/Salman100801/JavaScript-Games/master/assets/images/edit.png\' />";
     btnDone.classList.add("btnDone");
-    btnDone.innerHTML = "Done";
+    btnDone.innerHTML = "<img src=\'https://raw.githubusercontent.com/Salman100801/JavaScript-Games/master/assets/images/delete.png\' />";
     if(task.value === '')
     {
         alert('Input Text first');
@@ -21,9 +21,9 @@ btn.addEventListener('click', (e) => {
     else{
         //Add task to Ongoing
         li.appendChild(document.createTextNode(`${task.value}`));
+        li.appendChild(btnEdit);
+        li.appendChild(btnDone);
         onGoing.appendChild(li);
-        onGoing.appendChild(btnEdit);
-        onGoing.appendChild(btnDone);
         task.value = '';
 
         //Edit Node
@@ -31,19 +31,15 @@ btn.addEventListener('click', (e) => {
             e.preventDefault();
             task.value = `${li.textContent}`;
             li.remove();
-            btnEdit.remove();
-            btnDone.remove();
         });
 
         //Task Completed
         btnDone.addEventListener('click' , (e) =>{
             e.preventDefault();
             completed.appendChild(li);
-            completed.appendChild(btnEdit);
-            completed.appendChild(btnDone);
             const Done = btnDone;
-            btnEdit.innerHTML = "Edit Task";
-            Done.innerHTML = "Delete";
+            btnEdit.innerHTML = "<img src=\'https://raw.githubusercontent.com/Salman100801/JavaScript-Games/master/assets/images/edit.png\' />";
+            Done.innerHTML = "<img src=\'https://raw.githubusercontent.com/Salman100801/JavaScript-Games/master/assets/images/delete.png\' />";
             //Deleting Node
             Done.addEventListener('click', (e) => {
                 e.preventDefault();
