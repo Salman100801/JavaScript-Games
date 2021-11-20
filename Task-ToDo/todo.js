@@ -24,7 +24,9 @@ btn.addEventListener('click', (e) => {
         li.appendChild(btnEdit);
         li.appendChild(btnDone);
         onGoing.appendChild(li);
+        addItemsToLocalStorage();
         task.value = '';
+        
 
         //Edit Node
          btnEdit.addEventListener('click', (e) => {
@@ -46,9 +48,32 @@ btn.addEventListener('click', (e) => {
                 li.remove();
                 btnEdit.remove();
                 btnDone.remove();
+                //localStorage.removeItem();
             });
         });
 
-        
+        function addItemsToLocalStorage()
+        {   
+            var newInput = li.textContent;
+
+            if(localStorage.getItem('Child') == null){
+                localStorage.setItem('Child','[]');
+            }
+
+            var old_data = JSON.parse(localStorage.getItem('Child'));
+            old_data.push(newInput);
+
+            localStorage.setItem('Child',JSON.stringify(old_data));
+        }
+
+        function view(){
+
+            if(localStorage.getItem('Child')!= null){
+                
+                li = JSON.parse(localStorage.getItem('ongoing'));
+            }
+            
+        }
     }
 });
+
