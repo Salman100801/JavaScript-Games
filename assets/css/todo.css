@@ -11,15 +11,16 @@ header{
 }
 
 li{
+    list-style-type: none;
     list-style-image: url('../images/ball.png');
     width: fit-content;
     background: whitesmoke;
     font-size: 2rem;
-    font-weight:bolder;
     color:rgb(5, 5, 5);
     padding: 3px 3px;
     border: 1px black solid;
     margin-bottom: 3px;
+    border-radius: 15px;
 }
 
 .container{
